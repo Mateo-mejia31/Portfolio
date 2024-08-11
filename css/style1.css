@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin:0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #F6F6F6;
+}
+
+.header{
+    padding: 2% 0% 0% 15%;
+
+}
+.header__menu{
+    display: flex;
+    gap:80px;
+}
+
+.header__menu__link{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:1.5rem;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+
+}
+
+.titulo__destacado {
+    color: #22D4FD; 
+}
+
+.presentacion {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.presentacion__contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo{
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.presentacion__contenido__texto{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.presentacion__enlaces{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.presentacion__enlaces__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #22D4FD ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6
+
+}
+
+.presentacion__enlaces__link:hover{
+    cursor:-webkit-grab;
+    background-color: #272727;
+}
+
+.imagen{
+    width: 50%;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: #22D4FD;
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    position: sticky;
+}
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_contenido{
+        width: auto;
+    }
+}
